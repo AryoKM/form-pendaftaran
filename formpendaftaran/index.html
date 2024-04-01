@@ -1,0 +1,65 @@
+<style>
+    label {display: inline-block; width: 120px;}
+</style>
+<h1>Form Pendaftaran</h1>
+<table>
+<form action="/submit-form" method="post">
+    <label for="name">Nama</label>
+    :<input type="text" id="name" name="name"><br>
+  
+    <label for="password">Password</label>
+    :<input type="password" id="password" name="password"><br>
+  
+    <div>
+        <label for="birthdate">Tanggal Lahir</label>
+        :<input type="text" id="day" name="day" placeholder="" style="width: 30px;"> /
+        <input type="text" id="month" name="month" placeholder="" style="width: 30px;"> /
+        <input type="text" id="year" name="year" placeholder="" style="width: 50px;"> (hh/bb/tttt)
+    </div><br>
+  
+    <div>
+    <label>Jenis Kelamin</label>
+    :<input type="radio" id="male" name="gender" value="male">
+    <label for="male">Laki-Laki</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Perempuan</label><br>
+  </div>
+
+  <div>
+    <label for="major">Jurusan</label>
+    : <select id="major" name="major">
+      <option value="imt">IMT</option>
+      <option value="imt">VCD</option>
+      <option value="imt">MAN</option>
+    </select><br>
+  </div>
+  
+  <div>
+    <label>Hobby</label>
+    :<input type="checkbox" id="Gaming" name="hobby" value="gaming">
+    <label for="gaming">Gaming</label>
+    <input type="checkbox" id="Traveling" name="hobby" value="traveling">
+    <label for="traveling">Traveling</label>
+    <input type="checkbox" id="Rebahan" name="hobby" value="traveling">
+    <label for="rebahan">Rebahan</label>
+    <input type="checkbox" id="Dengar Musik" name="hobby" value="traveling">
+    <label for="dengar musik">Dengar Musik</label>
+    <input type="checkbox" id="Adventure" name="hobby" value="traveling">
+    <label for="adventure">Adventure</label>
+    <input type="checkbox" id="Lainnya" name="hobby" value="traveling">
+    <label for="lainnya">Lainnya</label>
+</div>
+  
+    <label for="address">Alamat</label>
+    :<textarea id="address" name="address"></textarea><br>
+  
+    <label for="semester">Semester</label>
+    :<select id="semester" name="semester">
+      <option value="1">Satu</option>
+      <option value="2">Dua</option>
+      <option value="3">Tiga</option>
+      <option value="4">Empat</option>
+    </select><br>
+  
+    <button type="submit">Kirim</button>
+  </form></table>
